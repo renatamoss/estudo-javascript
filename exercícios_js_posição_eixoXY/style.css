@@ -1,0 +1,14 @@
+#box{
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    position: absolute;
+    top: 150px;
+    margin: 30px;
+}
+
+#botaoCoordenadas{
+    background-color: blue;
+    color: white;
+    margin: 30px;
+}

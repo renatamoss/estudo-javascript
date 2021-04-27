@@ -1,0 +1,17 @@
+#container{
+    height: 100px;
+    width: 100px;
+    background-color: aqua;
+    margin: 30px;
+}
+
+#container-b{
+    height: 100px;
+    width: 100px;
+    background-color: gold;
+    margin: 30px;
+}
+
+.display{
+    display: none;
+}
