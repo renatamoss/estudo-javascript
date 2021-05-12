@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>ESTUDANDO LOCALSTORAGE</h1>
+
+    <p>A estrutura de storage de dados é bem simples, composta pelo par chave e valor. Para você ver todos os dados
+        gravados no localStorage do seu browser, basta abrir o inspect, clicar na aba Application.</p>
+
+    <h2>Para trabalhar com esses dados, você pode fazer basicamente 4 ações, usando 4 métodos:</h2>
+
+    <table border="solid 1px">
+        <tr>
+            <td>localStorage.setItem(nome, valor):</td>
+            <td>esta função é utilizada para armazenar um valor no local storage. Cada objeto gravado é referenciado por
+                uma chave (nome).</td>
+        </tr>
+        <tr>
+            <td>localStorage.getItem(nome):</td>
+            <td>por sua vez, o getItem é usado para recuperar um valor armazenado a partir da sua chave identificadora.
+            </td>
+        </tr>
+        <tr>
+            <td>localStorage.removeItem():</td>
+            <td>para remover um par específico;</td>
+        </tr>
+        <tr>
+            <td>localStorage.clear() </td>
+            <td>apaga TODOS os pares gravados pro aquele domínio;</td>
+        </tr>
+    </table>
+
+    <h2>Note que os valores sempre serão uma string. </h2>
+    <p> Logo, os dados que serão gravados ali precisam ser convertidos para
+        strings antes de serem gravados. Para fazer isso, basta usar o método JSON.stringify() antes de passar o valor
+        para o setItem().</p>
+
+    <table border="solid 1px">
+        <tr>
+            <td>JSON.stringfy(objeto):</td>
+            <td>para armazenar os dados, utilizaremos o formato JSON e esta função transforma um objeto em
+                string com sintaxe adequado ao JSON.</td>
+        </tr>
+        <tr>
+            <td>JSON.parse(objeto):</td>
+            <td>já a função parse transforma um item no formato JSON no seu formato original.</td>
+        </tr>
+    </table>
+
+    <h2>Exemplo</h2>
+    <p data-string></p>
+    <p data-objeto></p>
+
+
+    <script src="main.js"></script>
+</body>
+
+</html>
