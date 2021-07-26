@@ -1,11 +1,16 @@
 
 function Filter() {
 
-    const numbers = [9, 6, 3, 0].filter(x => x >= 6);
+    //dados
+    const numbers = [9, 6, 3, 0];
 
-    console.log(numbers);
-
-}
+    //tela
+    return ` The return is 
+    ${numbers.map((item) => {
+    return item
+    }).filter(x => x >= 6).join("/")} 
+    `
+};
 
 export default Filter;
 

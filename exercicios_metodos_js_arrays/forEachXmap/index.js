@@ -7,9 +7,14 @@ function forEachXmap() {
     console.log(numbersForeach) //underfine
 
     //Exemplo retorno map: devolve um novo array
-    const numbersMap = numbers.map(element => element * element).filter(x => x >= 9);
-    console.log(numbersMap) //25, 16 , 9
-
+    //tela
+    return `
+    <p> The numbers are 
+        ${numbers.map((element) => {
+            return element * element
+        }).filter(x => x >= 9).join('-')} 
+    </p>
+    `
 }
 
 export default forEachXmap;
