@@ -9,11 +9,14 @@ export function MapMetodHTML() {
     <div>
         <h2>E o método map() pode ser o mais indicado para alterar os dados pois ele retorna um novo Array com os dados.</h2>
         <p> E como o retorno é um Array nós podemos tirar vantagem disso para encadear outros métodos como (map(), filter(), reduce(), etc.). </p>
-        <ul>
-            ${colors.map((color) => {
-            return `<li> The color is ${color}</li>`
-            }).join('')}
-        </ul>
+       
+            <p> Array colors: ${colors.join(`, `)}</p>
+            <p> Retorno do método map em conjunto com o método .toUpperCase():  </p>
+            <ul>
+                ${colors.map((color) => {
+                    return `<li> The color is ${color.toUpperCase()}</li>`
+                }).join('')}
+            </ul>
         <hr>
     </div>
 `

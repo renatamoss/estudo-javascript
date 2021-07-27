@@ -5,7 +5,7 @@ import { MapMetodHTML } from "./Map/index.js";
 import forEachXmap from "./forEachXmap/index.js"
 import Filter from "./Filter/index.js"
 import { Reduce } from "./Reduce/index.js";
-import { Entries } from "./Reduce/Entries/Entries.js";
+import { Entries } from "./Entries/Entries.js";
 import { Values } from "./Values/Values.js";
 
 
@@ -17,7 +17,6 @@ ${ArrayLop()}
 ${MapMetodHTML()}
 ${ForEach()}
 ${forEachXmap()}
-
 ${Push()}
 ${Filter()}
 ${Reduce()}

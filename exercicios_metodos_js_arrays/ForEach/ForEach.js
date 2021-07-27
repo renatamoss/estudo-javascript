@@ -20,7 +20,9 @@ function ForEach() {
     <div>
         <h2> O método forEach() recebe uma função como argumento e a executa uma vez para cada elemento do Array.</h2>
         <p> No entanto, ao invés de retornar um novo array como o método map(), ele retorna undefined.</p>
-        ${petsLine}
+        <p> Array: ${pets.join(', ')}</p>
+        <p> Retorno do método forEach aplicado em conjunto + item.toUpperCase():
+        <p> ${petsLine} </p>
         <hr>
     </div>
     `

@@ -17,7 +17,9 @@ export function Push() {
     return `
     <div>
         <h2>A maneira mais fácil de adicionar um novo elemento a uma matriz é usando o push()método. </h2>
-        ${$arrayLine}
+        <p>Array: ${$array.join(', ')}</p>
+        <p> Retorno do array utilizando o método $array.push(Friday): </p>
+        <p> ${$arrayLine} </p>
         <hr>
     </div>
     `
