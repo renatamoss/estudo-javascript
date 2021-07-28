@@ -29,11 +29,11 @@ function maiorIdade(idade) {
 }
 maiorIdade(10)
 
-function study(item) {
-    while (item = true) {
+function study(ask = true) {
+    while (ask) {
         console.log(`You are study now.`)
         break;
     }
 }
-study(true)
+study(ask = false)
 
