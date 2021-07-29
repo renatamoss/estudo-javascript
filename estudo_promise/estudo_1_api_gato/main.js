@@ -1,8 +1,10 @@
+//Referência para este estudo:
+https://github.com/gutoffline/aula-promises
 
 //EXERCÍCIO 1///////////////////////////////////
 console.log('PRIMEIRO');
 
-setTimeout(() => console.log('SEGUNDO'), 2000);
+setTimeout(() => console.log('SEGUNDO'), 0);
 
 Promise.resolve()
 .then(() => console.log('TERCEIRO'));
@@ -15,7 +17,7 @@ let numero = 9;
 setTimeout(() => {
     numero += 10;
     console.log(numero)
-}, 2000);
+}, 0);
 
 console.log(1000);
 
@@ -28,14 +30,23 @@ const myPromise = new Promise( (resolve, rejetct) => {} )
 
 const minhaPromisse = new Promise((resolve, reject) => {
     const numero = 2222;
-    // resolve(numero);
+    resolve(numero);
     reject("Deu erro essa promise");
 });
 
 minhaPromisse
-.then(valor => valor)
-.then(valor => {
+.then((valor) => {
     console.log(valor)
+    const novoValor = valor * 2 
+    return novoValor;
+})
+.then(novoValor => {
+    console.log(novoValor)
+    const terceiroValor = novoValor - 444
+    return terceiroValor;
+})
+.then(terceiroValor => {
+    console.log(terceiroValor)
 })
 .catch(valorErro => {
     console.log(valorErro);
@@ -46,6 +57,7 @@ minhaPromisse
 
 const url = 'https://api.thecatapi.com/v1/images/search';
 fetch(url)
+
 .then(dadosDoGato => {
     return dadosDoGato.json()
 })
