@@ -23,7 +23,7 @@ console.log(1000);
 
 
 //EXERCÍCIO 3//////////////////////////////////
-const myPromise = new Promise( (resolve, rejetct) => {} )
+const myPromise = new Promise( (resolve, reject) => {} )
 //A resolve é a função que deve ser invocada quando a operação assíncrona 
 //que a gente fizer tiver sucesso, e, a reject deve ser invocada quando 
 //a operação assíncrona falhar.
